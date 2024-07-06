@@ -4,14 +4,16 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  /* transform: translate(1px,120px) rotate(360deg) infinite; */
+  /* animation: spin linear 1s infinite; */
+  animation: loading 1s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +30,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes loading {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

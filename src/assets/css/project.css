@@ -1,0 +1,34 @@
+.project-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/blueprint-removebg-preview.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project-container::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.project-container .project-title {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    background-color: #111827;
+    padding: 60px 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode .project-container .project-title{
+    background-color: #fff;
+    color: #4152f1;
+}
